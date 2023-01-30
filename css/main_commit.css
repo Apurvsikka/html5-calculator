@@ -1,0 +1,120 @@
+body {
+    font-family: Segoe UI Variable Text Light, -apple-system, BlinkMacSystemFont,
+      avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto,
+      noto, arial, sans-serif;
+  
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+  
+    background: #67b26f;
+    background: -webkit-linear-gradient(to right, #4ca2cd, #67b26f);
+    background: linear-gradient(to right, #4ca2cd, #67b26f);
+  }
+  
+  body,
+  input,
+  button {
+    font-family: Segoe UI Variable Display Semil, -apple-system,
+      BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica,
+      Ubuntu, roboto, noto, arial, sans-serif;
+  }
+  
+  noscript {
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    text-align: center;
+  
+    color: white;
+    font-size: 6vmin;
+    background: #3333;
+  }
+  
+  .calc {
+    display: none;
+    height: 100vh;
+    flex-direction: column;
+  
+    background: #eee3;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  
+  #calc-display {
+    background: #eeea;
+    font-size: 10vmin;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 3vmin;
+    flex: 1.5;
+    text-align: end;
+  }
+  
+  .calc-buttons:first-of-type {
+    margin-top: 20px;
+  }
+  
+  .calc-buttons {
+    margin-top: 10px;
+    display: flex;
+    flex: 1;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+  
+  .calc-button:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .calc-button {
+    cursor: pointer;
+    font-size: 7vmin;
+    background: #1e90ff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+  
+    flex: 1 1 0;
+    width: 0;
+  
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .calc-button-orange {
+    background: orange;
+  }
+  
+  @media only screen and (min-width: 1080px) {
+    .calc {
+      border-radius: 14px;
+      box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.1);
+      height: 75vmin;
+      width: 60vmin;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .calc-button {
+      font-size: 5vmin;
+    }
+  }
+  
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
